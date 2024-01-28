@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <cmath>
 #include <iostream>
-#include <C:\Users\moxut\source\repos\C++\tests\Cad_exchenger\Curves-Support\Shape3D.h>
+#include <Shape3D.h>
 #include <vector>
 
 int main()
