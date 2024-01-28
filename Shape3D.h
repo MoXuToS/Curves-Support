@@ -12,15 +12,24 @@ public:
 
 class Circle : Curve3D
 {
+public:
+
+private:
 
 };
 
 class Ellipse : Curve3D
 {
+public:
+
+private:
 
 };
 
 class Helix : Curve3D
 {
+public:
+
+private:
 
 };
