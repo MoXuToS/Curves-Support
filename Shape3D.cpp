@@ -20,6 +20,11 @@ vector<double> Circle::getDerivative(double t) const
     return {dx,dy,dz};
 };
 
+double Circle::getRadius()
+{
+    return this->radius;
+}
+
 vector<double> Ellipse::getPoint(double t) const
 {
     double x = radiusX * sin(t);
@@ -40,7 +45,7 @@ vector<double> Helix::getPoint(double t) const
 {
     double x = radius * cos(t);
     double y = radius * sin(t);
-    double z = step * t / (2*M_PI);
+    double z = step * t / (2*M_PI_4);
     return {x,y,z};
 };
 

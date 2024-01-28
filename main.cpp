@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <cmath>
 #include <iostream>
-#include <Shape3D.h>
+#include <C:\Users\moxut\source\repos\C++\tests\Cad_exchenger\Curves-Support\Shape3D.h>
 #include <vector>
 
 int main()
@@ -33,13 +33,13 @@ int main()
     // Сортировка только кругами
     sort(circles.begin(),circles.end(), [](Circle* a, Circle* b)
     {
-        return a.radius < b.radius;
+        return a->getRadius() < b->getRadius();
     });
 
     // Вычисление общий суммы радиусов всех кргуов
     double TotalSum = 0.0;
     for(const auto& circle : circles)
-        TotalSum += circle.radius;
+        TotalSum += circle->getRadius();
 
     cout << "Total sum of radius: " << TotalSum << endl;
 

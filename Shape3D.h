@@ -12,17 +12,18 @@ public:
     virtual vector<double> getDerivative(double t) const = 0;
 };
 
-class Circle : Curve3D
+class Circle : public Curve3D
 {
 public:
     Circle(double radius) : radius(radius) {}
     vector<double> getPoint(double t) const override;
     vector<double> getDerivative(double t) const override;
+    double getRadius();
 private:
     double radius;
 };
 
-class Ellipse : Curve3D
+class Ellipse : public Curve3D
 {
 public:
     Ellipse(double radiusX,double radiusY) : radiusX(radiusX), radiusY(radiusY) {}
@@ -33,7 +34,7 @@ private:
     double radiusY;
 };
 
-class Helix : Curve3D
+class Helix : public Curve3D
 {
 public:
     Helix(double radius,double step) : radius(radius), step(step) {}
