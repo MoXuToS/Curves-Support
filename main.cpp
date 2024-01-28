@@ -1,5 +1,6 @@
 #include <Shape3D.h>
 #include <algorithm>
+#include <cmath>
 #include <iostream>
 #include <vector>
 
@@ -12,7 +13,7 @@ int main()
     // Добавление случайных объектов кривых в контейнер
     curves.push_back(new Circle(5.0));
     curves.push_back(new Ellipse(3.0, 4.0));
-    curves.push_back(new helix(2.0, 1.0));
+    curves.push_back(new Helix(2.0, 1.0));
 
     double t = M_PI / 4;
     for(const auto& curve: curves)
